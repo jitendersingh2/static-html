@@ -1,0 +1,759 @@
+html, body {
+	width: 100% !important;
+	overflow-x: hidden !important;
+}
+
+/* Full page background style definition. */
+.page-background {
+	/* The optional background display configuration for the main body. */
+	background-color: white !important;
+
+	background-image: url('../../images/d8t-3.jpg') !important; 
+    background-position: 85% center;
+
+	/* have to use !important to override .ui-dialog */
+	background-repeat: no-repeat !important;
+	
+	background-attachment: fixed;  /* do not scroll with the rest of the page */
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	/* Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges */
+
+    /* have to use !important to override .ui-dialog */
+	background-size: cover !important;
+
+	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	text-shadow: none !important;
+}
+
+.header-bar {
+	background-color: rgba(0,0,0,0.5) !important;
+	background: url('../../images/header-gradient.png') repeat-x bottom left;
+	padding-top: .5em;
+	min-height: 3.3em;
+	min-width: 15em;
+	width: 100%;
+	text-align: center;
+	
+}
+
+.brand-big-logo {
+	display:inline;
+	float:left;
+	height: 2em;
+	width: 9.5em;
+	margin-left: 1em;
+	
+	background: url('../../images/caterpillar-logo-white2.png');
+	background-repeat: no-repeat;
+	background-position:left;
+	color: white;
+}
+
+.brand-small-logo {
+	display:inline;
+	float:left;
+	height: 2em;
+	width: 2.5em;
+	margin-left: 1em;
+	
+	background: url('../../images/cat-logo-color-black-background-small.png');
+	background-repeat: no-repeat;
+	background-position:left;
+	color: white;
+}
+
+@media (min-width: 25em) {	
+	.brand-big-logo {
+		display: inline;
+	}
+	.brand-small-logo {
+		display: none;
+	}
+}
+
+@media (min-width: 10em) and (max-width: 25em) {	
+	.brand-big-logo {
+		display: none;
+	}
+	.brand-small-logo {
+		display: inline;
+	}
+}
+
+.cws-big-logo {
+	display: none;
+	text-align: center;
+	color:white;
+	font-size: 1.7em;
+}
+
+.cws-small-logo {
+	display: none;
+	text-align: center;
+	color:white;
+	font-size: 1.5em;
+}
+
+@media (min-width: 42em) {	
+	.cws-big-logo {
+		display: inline;
+	}
+	.cws-small-logo {
+		display: none;
+	}
+}
+
+@media (min-width: 10em) and (max-width: 42em) {	
+	.cws-big-logo {
+		display: none;
+	}
+	.cws-small-logo {
+		display: inline;
+	}	
+}
+
+.heading-button-container {
+	margin-top: 0em !important;
+	margin-right: 1em;
+	float: right;
+	clear: right;
+}
+
+.heading-button {
+	margin-top: 0em !important;
+	display: inline-block !important;
+}
+
+.login-page-title {
+	font-size: 1.7em !important;
+	text-align: center;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	text-shadow: 1px 1px black;
+	color: white;
+}
+
+.login-page-section-title {
+	margin-top: 1em;
+	margin-bottom: .5em;
+	font-size: 1.3em !important; 
+}
+
+.instructions {
+	font-size: 1.3em !important;
+	margin-top: 1em;
+	margin-bottom: 1em;
+    text-shadow: 1px 1px black;
+    color: white;
+}
+
+.masthead {
+	display: none;
+	background-image: none !important;
+	padding: 10px;
+	text-align: center;
+	border: 0;
+}
+
+/* Main content page display style definitions. */
+.main-page-container {
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 10em;
+	margin-left: auto;
+	padding: 0;
+	max-width: 500px;
+}
+
+/* Styling for the bar containing the main page content. */
+.main-content-bar {
+	min-height: 200px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+    background-color:rgba(0,0,0,0.6);
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 0px;
+}
+
+@media (max-width: 600px) {
+    .main-content-bar {
+        border-radius: 0px;
+    }
+}
+    
+
+/* Optional branding bar displayed below the first two content bars. */
+.main-content-bar2 {
+}
+
+/* Optional branding bar displayed below the first two content bars. */
+.main-content-bar3 {
+}
+
+/* Styling for the main content container box. This element
+ * will be a child of the main-content-bar class. */
+.main-content-box {
+	padding: 0 15px 15px 15px;
+	max-width: 500px;
+	margin: 0 auto;
+	border-width: 0;
+	overflow: visible;
+	overflow-x: hidden;
+	color: white;
+	text-shadow: 1px 1px black;
+	position: relative;    /* must have position so that Language link can be
+	                          positioned relative to it */
+}
+
+.contact-support-desk {
+	display: none;
+}
+
+.motd {
+	margin-top: 1em;
+	text-align: center;
+	font-weight: bold;
+}
+
+.warn {
+	margin-top: 1em;
+	text-align: center;
+	text-shadow: 0px 0px 8px orange;
+	font-weight: bold;
+}
+
+#passwordExpireSoonDiv {
+    margin-top: 1em;
+    text-align: center;
+    color: #FFCC00 !important;  /* Cat gold */
+    text-shadow: 1px 1px black;
+}
+
+#error {
+    color: white;
+}
+
+.error-text-base {
+    margin-top: 1em;
+    background-color: seashell;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 2px;    
+    border-color: red;
+}
+
+.error-text {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 15px;
+	margin-right: 15px;
+	color: darkred;
+	font-size: 18px;
+	text-shadow: none;
+}
+
+/* Style for the banner policy text at the bottom of the login form. */
+.login-banner-text {
+	font-size: 0.7em;
+	margin-top: 5px;
+	text-shadow: none;
+}
+
+/* Used for styling of control buttons on forms. */
+.post-form-controls {
+	margin-top: 5px;
+	text-align: center;
+	clear: both;   /* Don't allow adjacent floats. */
+	overflow: visible; /* added 20180719 */
+}
+
+.post-form-buttons {
+    text-align: center;
+}
+    
+/* Used for styling cancel button div on forms. */
+.post-form-cancel-button {
+	margin-top: 5px;
+	text-align: center;
+	/* clear: both; * Don't allow adjacent floats. */
+}
+
+/* Used for styling submit button div on forms. */
+.post-form-submit-button {
+	margin-top: 5px;
+	text-align: center;
+	/* clear: both; * Don't allow adjacent floats. */
+}
+
+.Submitbtn {
+    margin-top: 7px;
+    background-color: #FFCC00;    /* Cat gold */
+    color: black;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 6px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border: 1px solid #1F1F7F;
+    border-radius: 4px;
+}
+
+.Submitbtn:hover {
+    background-color: #F0B934;
+}
+
+.Cancel-Button {
+    background-color: silver;
+    border: 1px solid #1F1F7F;
+    border-radius: 4px;
+    color: black;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 7px;
+    padding: 6px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.Cancel-Button:hover {
+    background-color: lightgray;
+}
+
+/* Styling for the container challenge question label/field pair. */
+.login-challenge-field-element {
+	margin-top: 0em !important;
+	margin-bottom: 0em !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+.login-challenge-field {
+	margin-top: 1em !important;
+	white-space: wrap !important;
+}
+
+.login-form-span {
+	display: inline-block;
+	float: right;
+	width: 78%;
+	font-weight: bold;
+}
+
+/* text over background picture */
+.input-field-text-on-pic {
+    /* The text label for an input field */
+    font-weight: bold !important;
+    vertical-align: middle !important;
+    text-shadow: 1px 1px black;
+    color: white;
+}
+
+.field_button_pair {
+	text-align: center;
+}
+
+.redirect-display {
+	margin-top: 1em;
+	font-weight: bold;
+}
+
+.redirect-display-hidden {
+    display: none;
+}
+
+#manageAccountFieldSet {
+    margin: auto;
+    max-width: 90%;
+}
+
+/* Style for the caps lock warning display. */
+.caps-lock-warning {
+	font-weight: bold;
+	font-size: 0.8em;
+	margin-top: 10px;
+	padding-left: 26px;
+	background-image: url('../../images/dialog-warning-small.png');
+	background-repeat: no-repeat;
+	min-height: 24px;
+	vertical-align: middle !important;
+	text-shadow: none;
+	clear: both; /* Don't allow adjacent floats. */
+}
+
+@media (min-width: 28em) {
+	.caps-lock-warning {
+		/* Float the container to the right to align
+		 * to the input field on larger screens. */
+		float: right;
+		width: 73.5%;
+	}
+}
+
+.caps-lock-warning-text {
+	vertical-align: middle;
+}
+
+.classic-link {
+	font-size: .7em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin: 0 auto;
+	color: gray;
+}
+
+.classic-link-white {
+    font-size: .7em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: 0 auto;
+    color: white;
+}
+
+.classic-link a {
+	color: gray !important;
+}
+
+.classic-link a:hover {
+	color: black !important;
+}
+
+.classic-link-large {
+	font-size: .85em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin: 0 auto;
+	color: gray;
+}
+
+/* used for Forgot Password span */
+.classic-link-large a {
+	color: gray;
+}
+
+.classic-link-large a:hover {
+	color: #FFCC00 !important; /* Cat gold */
+}
+
+.placeholder {
+	color: #aaa;
+}
+
+.info-format{
+    font-size: 0.75em;
+}
+
+/* Allow text in select menus to wrap */
+a.ui-link-inherit {
+	white-space: normal !important;
+}
+
+/* CSS for the language bar */
+
+/* deprecated */
+.ui-icon-cws-globe {
+	background-image: url("../../images/globe_white.png");
+	position: fixed;
+}
+
+.lang-btn {
+	padding-top: 1em;
+	text-align: right;
+	/*
+	display: none;
+	*/
+}
+
+.language-link {
+    display: block;
+    font-size: 12px;
+    position: absolute;
+    right: 4em;
+    top: 18em;
+    z-index: 2;
+}
+
+.language-link-content {
+    background-color: #e9e9e9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    display: none;
+    font-size: 12px;
+    position: absolute;
+    text-shadow: none;
+    z-index: 2;
+}
+
+.language-link-content a {
+    color: black;
+    display: block;
+    padding: 2px 6px;
+    text-decoration: none;
+}
+
+/* Change color of dropdown links on hover */
+.language-link-content a:hover {
+	background-color: #ffcc00
+}
+
+/* Show the dropdown menu on hover */
+.language-link:hover .language-link-content {
+    display: block;
+    position: absolute;
+}
+
+.language-link:hover .main-content-box {
+	height: 600px;
+}
+
+/* END CSS for the language bar */
+
+.footer-bar {
+	background-color: white !important;
+	background-image: none !important;
+	position: absolute !important;
+	width: 100%;
+	bottom: 0 !important;
+	/* z-index: 0 !important; */
+	text-shadow: none !important;
+}
+
+.footer-text {
+	text-align: center;
+}
+
+.usage-stmt {
+	margin: auto;
+	padding-left: 1em;
+	padding-right: 1em;
+	max-width: 45em;
+	text-align: left;
+}
+
+.brand-logo-footer {
+	display: none;
+}
+
+
+/* make it so the help topics content scrolls in a smaller vertical window */
+.help-topics-content {
+	background-color: lightgray;
+	color: black;
+    /*text-shadow: 0px 0px;*/
+    /*height: 720px;*/
+    /*overflow: auto;*/
+    padding: 1em;
+	-webkit-overflow-scrolling:touch;
+}
+
+#helpPageTitle {
+	color: black;
+	font-size: 1.7em !important;
+	text-align: center;
+}
+
+.white_label {
+    text-shadow: 1px 1px black;
+    color: white;
+}
+
+#giveConsentButton {
+    background-color: rgb(0,64,0);
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 10px;
+}
+    
+#removeConsentButton {
+    background-color: rgb(64,0,0);
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.consentDiv {
+    display: inline-block;
+    padding: 5px;
+}
+
+.GDPR-links {
+    text-decoration: none;
+    color: darkgreen;
+}    
+    
+.GDPR {
+    position: fixed;
+    z-index: 10;
+    height: 250px;
+    width: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold; 
+    background-color: #FFCC00;  /* Cat gold */
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+
+    /* Internet Explorer 10 */
+    display:-ms-flexbox;
+    -ms-flex-pack:center;
+    -ms-flex-align:center;
+
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+
+    /* Safari, Opera, and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+
+    /* W3C */
+    display:box;
+    box-pack:center;
+    box-align:center;
+}
+
+.redTextOnImg {
+    text-shadow: 0px 0px 8px red;
+}
+
+.greenTextOnImg {
+    text-shadow: 0px 0px 8px green;
+}
+
+.doNotWrap {
+    white-space: nowrap;
+}
+
+/*----------------------------------------------------------------------------*/
+/* KES - goal is to get rid of labels and just use placeholder text in a way
+ *       that the user can still see the placeholder text when typing
+ */
+ 
+/* Styling for the container for each label/input field pair. */
+.login-form-field {
+    margin: 12px;
+    clear: both; /* Don't allow adjacent floats. */
+    border: 0;
+    color: white;
+    display: block;
+    position: relative;
+}
+
+#forgotDivID {
+    text-align: right;
+}
+
+#forgotDivID a:hover {
+    color: #FFCC00 !important;  /* Cat gold */
+}
+
+/* Forgot username link */
+#forgotUsername {
+    color: rgb(220,235,255);
+    text-shadow: 1px 1px black;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/* KES - Forgot Password link */
+#forgotPwd {
+    color: rgb(220,235,255);
+    text-shadow: 1px 1px black;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.cwsuid-input-field {
+    margin: auto;
+    color: black;
+    border: 1px solid #ccc;
+    height: 32px;
+    font-size: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 97%;
+    position: relative;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    border-radius: 9px;
+    /*z-index: 0;*/
+}
+
+.cwspwd-input-field {
+    margin: auto;
+    color: black;
+    border: 1px solid #ccc;
+    height: 32px;
+    font-size: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 97%;
+    position: relative;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    border-radius: 9px;
+    /*z-index: 0;*/
+}
+
+#cwsUIDLabel, #fp-cwsUIDLabel, #fu-cwsUIDLabel {
+    color: darkgrey;
+    text-align: left;
+    left: 0.5em;
+    text-shadow: none;
+    position: absolute;
+    top: 10px;
+    z-index: 1;
+}
+
+#cwsPwdLabel, #confirmCwsPwdLabel {
+    color: darkgrey;
+    text-align: left;
+    left: 0.5em;
+    text-shadow: none;
+    position: absolute;
+    top: 10px;
+    z-index: 1;
+}
+
+/*----------------------------------------------------------------------------*/
+
+#cwsidDisplay {
+    color: khaki;
+}
+    
+.marginBottom1 {
+    margin-bottom: 1em;
+}
+
+/* hide the section that Jeremy Ethridge requested */
+#CatBreadCrumbSection {
+	display: none;
+}
+
+.closeButton {
+	/*
+    background-color: white;
+    */
+    margin-top: 15px;
+    text-align: right;
+}

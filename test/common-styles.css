@@ -1,0 +1,48 @@
+/* Shared general styles. */
+.center-text {
+	text-align: center;
+}
+
+.fill-container {
+	width:100%;
+}
+
+.display-none {
+	display: none;
+}
+
+.display-block {
+	display: block;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.redText {
+	color: red !important;
+}
+
+.ltredText {
+	color: rgb(255,180,180) !important;
+}
+
+.crimsonText {
+	color: Crimson !important;
+}
+
+.yellowText {
+	color: orange !important;
+}
+
+.greenText {
+	color: ForestGreen !important;
+}
+
+.palegreenText {
+	color: PaleGreen !important;
+}
