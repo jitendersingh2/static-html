@@ -54,6 +54,49 @@
 
         <div class="ping-body-sub-container">
             <form method="POST" action="$url" autocomplete="off">
+                <div class="main-content">
+                    <div class="main-content-bar">
+                        <div class="main-content-box">  
+                            <div class="login-form-field">
+                                <input type="text" data-role="none" class="cwsuid-input-field" name="cwsUID"
+                                    id="cwsUID63344" value="" required="required" autocomplete="off"
+                                    autofocus=autofocus placeholder="Username" />
+                                <!-- <label id="cwsUIDLabel" for="cwsUID63344" class="input-field-text"
+                                    data-role="none">Username</label> -->
+                                <div id="forgotDivID">
+                                    <a id="forgotUsername" target="_blank" tabindex="-1" href="/CwsLogin/cws/forgotusername.htm">Forgot
+                                        Username?</a>
+                                </div>
+                            </div>
+
+                            <div class="login-form-field">        
+                                <input type="password" data-role="none" class="cwspwd-input-field" name="cwsPwd"
+                                    id="cwsPwd63344" required="required" autocomplete="off" placeholder="Password" />
+                                <!-- <label id="cwsPwdLabel" for="cwsPwd63344" class="cwsPwdLabelClass"
+                                    data-role="none">Password</label> -->
+                                <div id="forgotDivID">
+                                    <a id="forgotPwd" target="_blank" tabindex="-1" href="/CwsLogin/password/forgotpassword.htm">Forgot
+                                        Password?</a>
+                                </div>
+                            </div>
+
+                            <!-- <fieldset id="manageAccountFieldSet" data-role="controlgroup" data-corners="false"
+                                class="floatable-form-control">
+                                <label for="manageAccount">Change Password / Profile</label>
+                                <input type="checkbox" name="manageAccount" id="manageAccount" data-mini="true" />
+                            </fieldset> -->
+
+                            <input type="checkbox" name="check" id="check" style="display:none;" />
+                            <div id="submitDiv" class="post-form-controls">
+                                <input type="submit" value="Log In" id="submitButton" class="Submitbtn"
+                                    data-role="none" />   
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="main-content-bar2"></div>
+                    <div class="main-content-bar3"></div>
+                </div>
 
                 <!-- <div class="ping-messages"> -->
                     <!-- #if($authnMessageKey) -->
@@ -72,12 +115,12 @@
                 <!-- </div> -->
 
                <!--  #if($altAuthSources.size() > 0) -->
-                <div class="content-columns columns-2">
+                <!-- <div class="content-columns columns-2">
                     <div class="content-column column-1">
 
                        <div class="column-title">
                            
-                        </div>
+                        </div> -->
 					<!-- 	<div class="column-title">
                             $templateMessages.getMessage($messageKeyPrefix, "title")
                         </div> -->
@@ -119,37 +162,37 @@
                             </label>
                         #end -->
 			<!-- Adding the form page as per CWS Login  -->
-					<div class="login-form-field">
-					   	<table><tr>
+					<!-- <div class="login-form-field">
+					   	<table><tr> -->
 					   		<!-- <td class="login-userid-icon"><img id="userIcon" src="assets/images/user_white_20.png"></td> -->
-							<td> <input placeholder="Username" id="username" type="text" size="36" name="pf.username" value="" autocorrect="off" autocapitalize="off" onKeyPress="return postOnReturn(event)"  />
+							<!-- <td> <input placeholder="Username" id="username" type="text" size="36" name="pf.username" value="" autocorrect="off" autocapitalize="off" onKeyPress="return postOnReturn(event)"  />
             	            
 					   		<td>
-				   				<div class="forgotUsernameHelpLink-container">
+				   				<div class="forgotUsernameHelpLink-container"> -->
 
 				   							<!-- <a ><img  src="assets/images/help_white_24.png"></a> -->
 				   							
         		                        
 		                            
-					   			</div>
+					   			<!-- </div>
 					   		</td>
 					   	</tr></table>
 					</div>
+					 -->
 					
-					
-					<div class="login-form-field">
-					   	<table><tr>
+					<!-- <div class="login-form-field">
+					   	<table><tr> -->
 					   		<!-- <td class="login-pwd-icon"><img id="userIcon" src="assets/images/key_white_13.png"></td> -->
-							<td> <input placeholder="Password" id="password" type="password" size="36" name="pf.pass" onKeyPress="return postOnReturn(event)" />
+							<!-- <td> <input placeholder="Password" id="password" type="password" size="36" name="pf.pass" onKeyPress="return postOnReturn(event)" />
             	            
 					   		<td>
-				   				<div class="forgotUsernameHelpLink-container">
+				   				<div class="forgotUsernameHelpLink-container"> -->
 
 				   							<!-- <a ><img  src="assets/images/help_white_24.png"></a> -->
 				   							
         		                        
 		                            
-					   			</div>
+					   			<!-- </div>
 					   		</td>
 					   	</tr></table>
 					   </div>
@@ -157,12 +200,13 @@
                             <input type="hidden" name="$ok" value="" />
                             <input type="hidden" name="$cancel" value="" />
 
-                            <a onclick="postOk();" class="ping-button normal allow" title="$templateMessages.getMessage($messageKeyPrefix, "signInButtonTitle")">
+                            <a onclick="postOk();" class="ping-button normal allow" title="$templateMessages.getMessage($messageKeyPrefix, "signInButtonTitle")"> -->
 <!--      commenting this message form ping as the text is "Sign On" but we need "Log In" as per CWS login               
         $templateMessages.getMessage($messageKeyPrefix, "signInButtonTitle") -->
-		Log In
-                            </a>
-                        </div><!-- .ping-buttons -->
+		<!-- Log In -->
+                            <!-- </a>
+                        </div> -->
+                        <!-- .ping-buttons -->
 				<!-- <div class="content-column column-2"> -->
 				
 				<!-- Adding a row separator between LogIn button and social buttons  -->
@@ -216,12 +260,12 @@
                         <!-- #end -->
 
                 <!-- #if($altAuthSources.size() > 0) -->
-                    </div>
+                    <!-- </div> -->
                     <!-- column-1 -->
 
                    
 
-                </div>
+                <!-- </div> -->
                 <!-- content-columns -->
                 <!-- #end -->
                 
@@ -235,7 +279,7 @@
                          data-size="invisible"></div>
                 #end -->
 
-                <input type="hidden" name="$adapterIdField" id="$adapterIdField" value="$adapterId" />
+                <!-- <input type="hidden" name="$adapterIdField" id="$adapterIdField" value="$adapterId" /> -->
             </form>
         </div><!-- .ping-body// blank div -->
         
