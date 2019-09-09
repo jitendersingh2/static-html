@@ -5437,6 +5437,37 @@ margin: 8px;
   cursor: default;
 }
 
+.footer-bar {
+	background-color: white !important;
+	background-image: none !important;
+	position: absolute !important;
+	width: 100%;
+	bottom: 0 !important;
+	/* z-index: 0 !important; */
+	text-shadow: none !important;
+}
+
+.footer-text {
+	text-align: center;
+}
+
+.usage-stmt {
+	margin: auto;
+	padding-left: 1em;
+	padding-right: 1em;
+	max-width: 45em;
+	text-align: left;
+}
+
+.classic-link {
+  font-size: .7em;
+  font-weight: 700;
+}
+
+.classic-link a {
+  color: gray !important;
+}
+
 .ping-footer-container {
   position: absolute;
   bottom: 0;
